@@ -1,0 +1,92 @@
+body{
+  font-family: Poppins, sans-serif;
+
+  /* Live Animated Gradient */
+  background: linear-gradient(-45deg, #c7a0f2, #a6c7ff, #ffb6c1, #b2f7ef);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+h2{
+  text-align: center;
+  color: #e70f0f;
+  margin-bottom: 20px;
+}
+
+.box{
+  width: 400px;
+  background: rgba(255,255,255,0.9);
+  padding: 50px;
+  border-radius: 15px;
+
+  /* Soft Shadow */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  transition: 0.3s ease;
+}
+
+/* Simple Hover */
+.box:hover{
+  transform: scale(1.02);
+}
+
+input,
+select,
+textarea,
+button{
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+/* Input Hover */
+input:hover,
+select:hover,
+textarea:hover{
+  border-color: #2575fc;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  box-shadow: 0 0 8px rgba(37,117,252,0.4);
+  border-color: #2575fc;
+}
+
+/* Button */
+button{
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Button Hover */
+button:hover{
+  opacity: 0.9;
+  transform: scale(1.03);
+}
